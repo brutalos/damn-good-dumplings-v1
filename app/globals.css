@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --color-0: #000000;
-  --color-1: #0c594a;
-  --color-2: #f3968e;
-  --color-3: #0000ee;
-  --color-4: #cccccc;
-  --color-5: #f7f7f7;
-  --color-6: #ffffff;
-  --color-7: #fedf58;
-  --color-8: #116dff;
-  --color-9: #e33292;
-  --color-10: #1d67cd;
-  --color-11: #5f6360;
-  --color-12: #080808;
-  --color-13: #1a2df3;
-  --color-14: #e72818;
-  --color-15: #333333;
-  --color-dark: #000000;
-  --color-primary: #0c594a;
-  --color-primary-light: #f3968e;
+  --color-primary: #E11D48;
+  --color-secondary: #FB7185;
+  --color-accent: #2563EB;
+  --color-background: #FFF1F2;
+  --color-dark: #881337;
+  --color-light: #FFFFFF;
+  
+  --font-heading: "Amatic SC", cursive;
+  --font-body: "Cabin", sans-serif;
+  
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
 }
 
+@layer base {
   body {
-    @apply bg-white text-dark antialiased;
+    @apply bg-background text-dark font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-wide;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+}
+
+.glass-dark {
+  @apply bg-dark/10 backdrop-blur-md border border-white/10;
 }
