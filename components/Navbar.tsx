@@ -18,8 +18,6 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8 text-zinc-400 text-sm font-medium">
           <Link href="/menu" className="hover:text-white transition-colors">MENU</Link>
           <Link href="/locations" className="hover:text-white transition-colors">LOCATIONS</Link>
-          <Link href="/about" className="hover:text-white transition-colors">ABOUT</Link>
-          <Link href="/contact" className="hover:text-white transition-colors">CONTACT</Link>
         </div>
 
         <div className="flex items-center gap-4">
@@ -43,8 +41,6 @@ export default function Navbar() {
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-zinc-950 border-b border-zinc-900 py-4 px-4 space-y-4 shadow-xl`}>
         <Link href="/menu" className="block text-zinc-400 hover:text-white text-lg py-2">MENU</Link>
         <Link href="/locations" className="block text-zinc-400 hover:text-white text-lg py-2">LOCATIONS</Link>
-        <Link href="/about" className="block text-zinc-400 hover:text-white text-lg py-2">ABOUT</Link>
-        <Link href="/contact" className="block text-zinc-400 hover:text-white text-lg py-2">CONTACT</Link>
       </div>
     </nav>
   )
