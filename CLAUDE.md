@@ -8,7 +8,7 @@
 - If you encounter an error, fix the CODE, never the dependency versions.
 
 ## Self-Verification (MANDATORY — do this after every file change)
-- After writing or editing TypeScript files, run: `npx tsc --noEmit 2>&1 | head -40`
+- After writing or editing TypeScript files, run: `npx tsc --noEmit`
 - If errors are found, fix them immediately in the same session before finishing.
 - Do NOT stop until `npx tsc --noEmit` reports no errors.
 
